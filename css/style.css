@@ -64,18 +64,7 @@ h1 {
     color: var(--main-bg-color)
 }
 
-.fa-location-dot {
-    color: black;
-    width: 14px;
-}
-
 /****** Header **********/
-.logo img {
-    width: auto;
-    height:19px;
-    padding: 30px 50px 30px 0px;
-}
-
 header {
     display:flex;
     flex-direction: row;
@@ -83,7 +72,12 @@ header {
     height: 79px;
 }
 
-.nav {
+.logo img {
+    height:19px;
+    padding-top:30px;
+}
+
+.navigation {
     width: 244px;
     list-style-type: none;
     display: flex;
@@ -92,11 +86,11 @@ header {
     margin:0px;
     }
 
-li {
+.menu-button {
     padding-top: 20px;
 }
     
-li:hover {
+.menu-button:hover {
     color: var(--main-color);
     border-top: 3px solid var(--main-color);
     padding-top: 17px;
@@ -104,7 +98,7 @@ li:hover {
 
 /****** Info group ***********/
 .info-group {
-    padding: 50px 0px 50px 0px;
+    margin-top: 30px;
 }
 
 .search-bar {
@@ -113,7 +107,10 @@ li:hover {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .location {
@@ -126,6 +123,12 @@ li:hover {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
+
+.fa-location-dot {
+    color: black;
+    width: 14px;
+}
+
 .search {
     flex: 1;
     display:flex;
@@ -133,7 +136,7 @@ li:hover {
     align-items: center;
     background-color: white;
     border-top: 1px #F2F2F2 solid;
-    border-bottom: 1px #F2F2F2 solid;   
+    border-bottom: 1px #F2F2F2 solid; 
 }
 
 .search-text {
@@ -142,6 +145,7 @@ li:hover {
     background-color: white;
     border:none;
     font-size: 18px;
+    font-weight: bold;
 }
 
 .button {
@@ -165,6 +169,50 @@ li:hover {
     display: none;
 }
 
+.filtres {
+    width: 758px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.bouton-filtre {
+    height: 50px;
+    border-radius: 25px;
+    border: #d9d9d9 2px solid;
+    padding-left: 19px;
+    padding-right: 19px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.bouton-filtre:hover {
+    background-color: var(--filter-bg-color);
+}
+
+.bouton-filtre .fa-solid {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.infos {
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.fa-info {
+    font-size: 10px;
+    padding: 7px 10px 7px 10px;
+    margin-right: 10px;
+    border: #d9d9d9 1px solid;
+    border-radius: 50%;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -212,7 +260,6 @@ li:hover {
     padding-left: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: ;
     box-sizing: border-box;
 }
 
