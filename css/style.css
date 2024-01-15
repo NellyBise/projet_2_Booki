@@ -122,13 +122,12 @@ header {
     width: 14px;
 }
 .search {
-    flex: 1;
-    display:flex;
     border-top: 1px #F2F2F2 solid;
     border-bottom: 1px #F2F2F2 solid; 
 }
 .search-text {
     height: 45px;
+    width: 100%;
     text-align: center;
     border:none;
     font-size: 18px;
@@ -157,7 +156,7 @@ header {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 35px;
+    margin-bottom: 19px;
 }
 .filtres {
     width: 90%;
@@ -186,7 +185,7 @@ header {
     font-size: 22px;
 }
 .infos {
-    margin-bottom: 35px;
+    margin-bottom: 19px;
     display: flex;
     align-items: center;
 }
@@ -462,10 +461,14 @@ header {
     }
     .bouton-filtre {
         width: 36%;
+        min-width:110px;
         margin-top:20px
     }
     .filtres-section .medium-title {
         margin-bottom:0px
+    }
+    .infos{
+        margin:0px
     }
     .hebergements-and-populaires {
         flex-direction: column-reverse;
