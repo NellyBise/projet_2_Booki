@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin:0px;
 }
 
 .main-container {
@@ -38,25 +39,10 @@ a {
     margin: 0;
     font-size: 22px;
 }
-
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-
-.card img {
-    object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
-}
 .medium-title {
     font-size: 18px;
     font-weight: bold;
-    margin:0px
+    margin:0px;
 }
 
 .euro {
@@ -64,7 +50,23 @@ a {
 }
 
 .neutral-star {
-    color: var(--main-bg-color)
+    color: var(--main-bg-color);
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.card img {
+    object-fit: cover;
+}
+.card-title {
+    font-size: 16px;
+}
+.card:hover{
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.28));
 }
 
 /****** Header **********/
@@ -177,9 +179,10 @@ header {
     align-items: center;
     font-size: 18px;
 }
-.bouton-filtre:hover {
-    background-color: var(--filter-bg-color);
-}
+.bouton-filtre:hover{
+  background-color:  var(--filter-bg-color);
+  transition: 0.7s;
+} 
 .bouton-filtre .fa-solid {
     margin-right: 10px;
     font-size: 22px;
@@ -278,7 +281,7 @@ header {
     display: flex;
 }
 .populaires-cards a {
-    margin-top:30px
+    margin-top:30px;
 }
 .populaires-cards img {
     width: 33%;
@@ -312,7 +315,7 @@ header {
     display: flex;
     flex-direction: column;
     height: 439px;
-    padding: 0px
+    padding: 0px;
 }
 .activites-cards a {
     width:22%;
@@ -337,6 +340,13 @@ header {
     width: 33%;
     padding-left: 20px;
 }
+.footer ul {
+    padding:0px;
+}
+.footer li{
+    list-style-type: none;
+    margin-bottom: 16px;
+}
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -354,7 +364,7 @@ header {
         font-size: 16px;
     }
     .filtres-section .medium-title {
-        margin-bottom:20px
+        margin-bottom:20px;
     }
 
     .hebergements-and-populaires {
@@ -417,7 +427,7 @@ header {
     }
     .navigation{
         width:100%;
-        padding:0px
+        padding: 0px;
     }
     .menu-button{
         width:50%;
@@ -429,11 +439,11 @@ header {
         color: var(--main-color);
         border-bottom: 3px solid var(--main-color);
         border-top:3px solid transparent;
-        padding-bottom: 17px
+        padding-bottom: 17px;
     }
     
     .info-group {
-        padding:20px
+        padding:20px;
     }
     .search-bar {
         width: 100%;
@@ -441,7 +451,7 @@ header {
         font-size: 18px;       
     }
     .button-text {
-        display:none
+        display:none;
     }
     .fa-magnifying-glass{
        display: contents;
@@ -463,13 +473,13 @@ header {
     .bouton-filtre {
         width: 36%;
         min-width:110px;
-        margin-top:20px
+        margin-top:20px;
     }
     .filtres-section .medium-title {
-        margin-bottom:0px
+        margin-bottom:0px;
     }
     .infos{
-        margin:0px
+        margin:0px;
     }
     .hebergements-and-populaires {
         flex-direction: column-reverse;
@@ -487,10 +497,10 @@ header {
         flex-direction: column;
     }
     .populaires-cards a {
-        width:100%
+        width:100%;
     }
     .populaires-cards img {
-        width:33%
+        width:33%;
     }
     .hebergements {
         margin-top: 15px;
@@ -502,14 +512,14 @@ header {
         flex-direction: column;
     }
     .hebergements-cards a {
-        width:100%
+        width:100%;
     }
 
     .activites-cards {
         flex-direction: column;
     }
     .activites-cards a {
-        width:100%
+        width:100%;
     }
     .activites-cards .card {
         height: 200px;
@@ -517,7 +527,7 @@ header {
     .footer {
         display: flex;
         flex-direction: column;
-        padding-top:5px
+        padding-top:5px;
     }
     .footer-menu {
         width:100%;
@@ -525,5 +535,6 @@ header {
         padding-bottom: 25px;
         padding-left: 30px;
     }
+    
 
 }
