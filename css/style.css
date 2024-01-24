@@ -68,6 +68,10 @@ a {
 .card:hover{
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.28));
 }
+::placeholder{
+    color:black;
+    opacity: 1;
+}
 
 /****** Header **********/
 header {
@@ -101,13 +105,15 @@ header {
 .info-group {
     margin-top: 30px;
 }
-.search-bar {
+.search-bar form {
     height: 49px;
     width: 377px;
     display:flex;
     font-weight: bold;
     margin-top: 35px;
     margin-bottom: 35px;
+    border : solid 1px var(--main-bg-color);
+    border-radius: 20px;
 }
 .location {
     height: 49px;
@@ -117,16 +123,13 @@ header {
     align-items: center;
     background-color: var(--main-bg-color);
     border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-bottom-left-radius:15px;
 }
 .fa-location-dot {
     color: black;
     width: 14px;
 }
-.search {
-    border-top: 1px #F2F2F2 solid;
-    border-bottom: 1px #F2F2F2 solid; 
-}
+
 .search-text {
     height: 45px;
     width: 100%;
@@ -446,10 +449,14 @@ header {
     .info-group {
         padding:20px;
     }
-    .search-bar {
+    .search-bar form{
         width: 100%;
-        max-width:335px;
+        max-width:320px;
         font-size: 18px;       
+    }
+    .search-button .button {
+        border-radius: 15px;
+        box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
     }
     .button-text {
         display:none;
