@@ -449,10 +449,13 @@ header {
     .info-group {
         padding:20px;
     }
+    
     .search-bar form{
         width: 100%;
-        max-width:320px;
         font-size: 18px;       
+    }
+    .search{
+        width:100%
     }
     .search-button .button {
         border-radius: 15px;
